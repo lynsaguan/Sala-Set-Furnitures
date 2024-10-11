@@ -151,15 +151,20 @@
     color: white;
 }
 
-#home h1 {
-    font-size: 48px; 
-    margin-bottom: 16px; 
+.container h3 {
+    font-size: 45px; 
+    color: #E2F1E7;
+    font-family: "Lucida Calligraphy", cursive;
+    margin: 0; 
 }
 
-#home h2 {
-    font-size: 32px; 
+.container p {
+    font-size: 16px; 
+    color: #fff; 
+    padding: 16px 0;
+    line-height: 1.5;
+    margin: 0; 
 }
-
 .offcanvas.offcanvas-end {
     width: 250px !important; 
 }
@@ -272,9 +277,10 @@
     flex: 1;
 }
 .about-content h2{
-    font-size: 20px;
+    font-size: 25px;
     margin-bottom: 15px;
-    color: #333;  
+    color: #333; 
+    font-family: 'Lucida Sans'; 
 }
 .about-content p{
     font-size: 16px;
@@ -292,6 +298,7 @@
     margin-top: 15px;
     transition: 0.3s ease;
     background-color: #387478;
+    font-family: 'Lucida Sans'; 
 }
 .about-content .read-more:hover{
     background-color: #629584;
