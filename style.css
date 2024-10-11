@@ -341,33 +341,6 @@
     box-sizing: border-box;
 }
 
-.icons-container .icons {
-    background: #fff;
-    border: 1rem solid #629584;
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    flex: 1 1 calc(25% - 1rem);
-    box-sizing: border-box;
-}
-
-.icons-container .icons img {
-    height: 4rem;
-    margin-right: 1rem;
-}
-
-.icons-container .icons h3 {
-    color: #333;
-    padding-bottom: .3rem;
-    font-size: 1.2rem;
-}
-
-.icons-container .icons span {
-    color: #555;
-    padding-bottom: .3rem;
-    font-size: 1rem;
-}
-
 /* products start */
 #products{
     width: 100%;
