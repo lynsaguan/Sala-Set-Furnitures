@@ -6,7 +6,6 @@
     border-radius: 12px; 
     padding: 4px 12px;
 }
-
 .navbar-brand {
     font-weight: 500 !important;
     color: #387478 !important;
@@ -14,11 +13,9 @@
     transition: 0.3s color !important;
     font-family: 'Lucida Sans';
 }
-
 .navbar-brand:hover {
     color: #629584 !important;
 }
-
 .login-button {
     background-color: #387478;
     color: #fff;
@@ -29,44 +26,36 @@
     transition: 0.3s background-color;
     border: none !important;
 }
-
 .login-button:hover {
     background-color: #629584;
 }
-
 .navbar-toggler {
     border: none !important;
     font-size: 16px; 
     padding: 6px 8px;
 }
-
 .navbar-toggler:focus, .btn-close:focus {
     box-shadow: none !important;
 }
-
 .nav-link {
     color: #666777 !important;
     font-weight: 500;
     font-size: 14px !important; 
     position: relative;
 }
-
 .nav-link:hover, .nav-link.active {
     color: #000 !important;
 }
-
 .nav-link {
     position: relative;
     display: inline-block;
 }
-
 .navbar .container h3 {
     font-size: 45px; 
     color: #E2F1E7;
     font-family: "Lucida Calligraphy", cursive;
     margin: 0; 
 }
-
 .navbar .container p {
     font-size: 16px; 
     color: #fff; 
@@ -74,6 +63,7 @@
     line-height: 1.5;
     margin: 0; 
 }
+
 
 /* Modal Signin starts */
 #modalSignin .btn-primary, 
@@ -112,6 +102,8 @@
 #modalSignup .form-check-label {
     font-size: 12px; 
 }
+
+
 /* modal for signup */
 #modalSignup .modal-header,
 #modalSignup .modal-body {
@@ -119,9 +111,7 @@
 }
 
 
-
-
-/* Home starts */
+/* Home section */
 #home {
     background: url('images/home.jpg') no-repeat center center;
     background-size: cover;
@@ -132,7 +122,6 @@
     align-items: center;
     justify-content: center;
 }
-
 #home::before {
     background-color: rgba(0, 0, 0, 0.6);
     content: "";
@@ -143,21 +132,18 @@
     left: 0;
     z-index: 1;
 }
-
 #home .container {
     position: relative;
     z-index: 2;
     text-align: center;
     color: white;
 }
-
 .container h3 {
     font-size: 45px; 
     color: #E2F1E7;
     font-family: "Lucida Calligraphy", cursive;
     margin: 0; 
 }
-
 .container p {
     font-size: 16px; 
     color: #fff; 
@@ -168,7 +154,6 @@
 .offcanvas.offcanvas-end {
     width: 250px !important; 
 }
-
 .offcanvas-title {
     color: #387478;
 }
@@ -181,7 +166,6 @@
         font-size: 16px; 
     }
 }
-
 @media (max-width: 576px) {
     #home h3 {
         font-size: 25px; 
@@ -190,7 +174,6 @@
         font-size: 14px; 
     }
 }
-
 @media (min-width: 991px) {
     .nav-link::before {
         content: "";
@@ -211,9 +194,6 @@
         visibility: visible;
     }
 }
-
-
-
 
 
 /* about us section */
@@ -271,7 +251,6 @@
     display: block;
     transition: 0.5s ease;
 }
-
 .about-content{
     flex: 1;
 }
@@ -332,16 +311,12 @@
         font-size: 16px;
     }
     .about-content .read-more{
-        font-size: 16px;
-        
+        font-size: 16px;    
     }
 }
 
 
-
-
-
-/* products start */
+/* products section */
 #products{
     width: 100%;
     margin-top: 60px;
@@ -362,7 +337,6 @@
     margin: 0 auto;
     display: block;
     transition: 0.5s ease;
-    
 }
 #products .card:hover img{
     transform: scale(.9);
@@ -393,7 +367,6 @@
         font-size: 20px;
     }
 }
-
 #container2{
     margin-top: 30px;
 }
@@ -428,6 +401,8 @@
     cursor: pointer;
 }
 
+
+/* Gallery section */
 .titles {
     text-align: center;
     padding-top: 100px;
@@ -439,13 +414,11 @@
     margin: 0 auto;
     margin-bottom: 50px;
 }
-
 .gallery .box-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
 }
-
 .gallery .box-container .box {
     width: 400px;
     height: 240px;
@@ -453,19 +426,17 @@
     position: relative;
     transition: transform 0.3s ease;
 }
-
 .gallery .box-container .box .discount {
     position: absolute;
-    top: 10px; /* Positioning from the top */
-    left: 10px; /* Positioning from the left */
-    background-color: #629584; /* Background color */
-    color: white; /* Text color */
-    padding: 5px 10px; /* Padding */
-    border-radius: 5px; /* Rounded corners */
-    font-size: 16px; /* Font size */
-    z-index: 15; /* Ensure it's above the image */
+    top: 10px; 
+    left: 10px; 
+    background-color: #629584; 
+    color: white; 
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    z-index: 15; 
 }
-
 .gallery .box-container .box img {
     height: 100%;
     width: 100%;
@@ -473,11 +444,9 @@
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
     transition: transform 0.5s ease-in-out;
 }
-
 .gallery .box-container .box:hover img {
     transform: scale(1.2);
 }
-
 .gallery .box-container .box .icons {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.7);
@@ -490,11 +459,9 @@
     opacity: 0;
     transition: opacity 0.3s ease;
 }
-
 .gallery .box-container .box:hover .icons {
     opacity: 1;
 }
-
 .gallery .box-container .box .icon {
     font-size: 24px;
     color: #fff;
@@ -502,11 +469,9 @@
     cursor: pointer;
     transition: color 0.3s ease;
 }
-
 .gallery .box-container .box .icon:hover {
     color: #629584;
 }
-
 @media (max-width: 1200px) {
     .gallery .box-container {
         grid-template-columns: repeat(2, 1fr);
@@ -517,38 +482,77 @@
         height: 240px;
     }
 }
-
 @media (max-width: 767px) {
     .titles {
         font-size: 24px;
         padding-top: 50px;
         margin-bottom: 40px;
     }
-
     .gallery .box-container {
         grid-template-columns: 1fr;
     }
-
     .gallery .box-container .box {
         width: 100%;
         height: auto;
         transition: transform 0.3s ease;
     }
-
     .gallery .box-container .box img {
         max-height: 240px;
         height: auto;
     }
-
     .gallery .box-container .box:hover img {
         transform: scale(1.2);
     }
-
     .gallery .box-container .box .icon {
         font-size: 20px;
     }
-
     .gallery .box-container .box .icon:hover {
         color: #629584;
     }
 }
+
+
+/* Reviews section */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* contact Us section */
+
+
+
+
+
+
+
+
+
+/* Footer */
