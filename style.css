@@ -513,36 +513,78 @@
 
 
 /* Reviews section */
-.review .box-container{
+.review .box-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap: 1.5rem;
-
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.8rem;
 }
 
-.review .box-container .box{
-    border: #387478;
+#reviews h1 {
     text-align: center;
-    padding: 3rem 2rem;
+    padding-top: 100px;
+    font-size: 30px;
+    color: #629584;
+    font-weight: bold;
+    border-bottom: 2px solid #629584;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 50px;
 }
-.review .box-container .box p{
-    font-size: 1.6rem;
-    line-height: 1.8;
-    color: #ccc;
-    padding: 2rem 0;
 
+.review .box-container .box {
+    border: 1px solid #387478;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.review .box-container .box .user{
-    height: 7rem;
-    width: 7rem;
+
+.review .box-container .box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.review .box-container .box p {
+    font-size: 1rem;
+    line-height: 1.2;
+    color:#666;
+    padding:1rem 1rem;
+    text-align: justify;
+}
+
+.review .box-container .box .user {
+    height: 4rem;
+    width: 4rem;
     border-radius: 50%;
     object-fit: cover;
 }
 
+.review .box-container .box h3 {
+    padding: 0.5rem 0;
+    font-size: 1.2rem;
+    color: #629584;
+    font-family: 'Lucida Sans';
+}
 
+.review .box-container .box .stars i {
+    font-size: 0.5rem;
+    color: #629584;
+}
 
+.quote {
+    height: 60px;
+}
 
+@media (max-width: 900px) {
+    .review .box-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
+@media (max-width: 600px) {
+    .review .box-container {
+        grid-template-columns: 1fr;
+    }
+}
 
 
 
