@@ -575,15 +575,15 @@
     height: 60px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) { /* For larger tablets and smaller screens */
     .review .box-container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
     }
 }
 
 @media (max-width: 600px) {
     .review .box-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* One column */
     }
 }
 
@@ -729,5 +729,148 @@
     }
 }
 
+/* blog */
+/* Main grid container */
+.blogs {
+    max-width: 1200px; /* Set a max width for the blogs container */
+    margin: 0 auto; /* Center the container */
+    padding: 1rem; /* Add some padding */
+}
+
+#blogs .heading5{
+    text-align: center;
+    padding-top: 40px;
+    font-size: 30px;
+    color: #629584;
+    font-weight: bold;
+    border-bottom: 2px solid #629584;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+
+}
+.blogs .box-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four columns for extra-large screens */
+    gap: 1rem;
+    font-family: 'Lucida Sans', sans-serif; /* Font family */
+    justify-items: center; /* Center items within grid cells */
+}
+
+/* Individual boxes */
+.blogs .box-container .box {
+    border: 1px solid #387478;
+    text-align: center; /* Center-align content */
+    border-radius: 30px;
+}
+
+/* Image container */
+.blogs .box-container .box .image {
+    width: 250px; /* Set fixed width */
+    height: 180px; /* Decrease height for smaller container */
+    overflow: hidden;
+    margin: 0 auto; /* Center image container */
+}
+
+/* Image inside the container */
+.blogs .box-container .box .image img {
+    width: 100%;
+    height: 100%; /* Ensure the image fills the container */
+    object-fit: cover; /* Ensures image covers the container */
+}
+
+/* Content box */
+.blogs .box-container .box .content {
+    padding: 0.5rem;
+    text-align: center; /* Center text inside content */
+}
+
+.blogs .box-container .box .content .title {
+    font-size: 1.2rem; /* Smaller title font size */
+    line-height: 1.1;
+    color: #666;;
+    text-decoration: none; /* Remove underline */
+}
+
+.blogs .box-container .box .content .title:hover {
+    color: #387478;
+}
+
+.blogs .box-container .box .content span {
+    color: #387478;
+    display: block;
+    padding-top: 0.25rem;
+    opacity: 0.5;
+    font-size: 0.9rem; /* Smaller span font size */
+}
+
+.blogs .box-container .box .content p {
+    font-size: 0.9rem; /* Smaller paragraph font size */
+    line-height: 1.2;
+    color: #666;
+    opacity: 0.9;
+    padding: 0.25rem 0;
+}
+
+.blogs .box-container .box .content a.btn {
+    background-color: #387478;
+    color: #fff;
+    padding: 0.3rem 0.6rem; /* Smaller button size */
+    text-decoration: none; /* No underline for buttons */
+    border-radius: 0.3rem;
+    margin-top: 0.5rem; /* Add margin above the button */
+}
+
+.blogs .box-container .box .content a.btn:hover {
+    background-color: #285c5e;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) { /* Large screens */
+    .blogs .box-container {
+        grid-template-columns: repeat(2, 1fr); /* Three columns */
+    }
+}
+
+@media (max-width: 900px) { /* Medium screens, including iPads */
+    .blogs .box-container {
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
+    }
+
+    .blogs .box-container .box .image {
+        width: 80%;
+        height:250px; /* Let height adjust */
+    }
+}
+
+@media (max-width: 600px) { /* Small screens */
+    .blogs .box-container {
+        grid-template-columns: 1fr; /* One column */
+    }
+
+    .blogs .box-container .box {
+        margin-bottom: 1rem; /* Add space between boxes */
+    }
+}
 
 /* Footer */
+.logo-name {
+    font-weight: 500 !important;
+    color: #387478 !important;
+    font-size: 20px !important;
+    transition: 0.3s color !important;
+    font-family: 'Lucida Sans';
+    margin-top: 15px;
+    margin-right: 15px;
+  }
+  .nav {
+    padding: 0 !important; /* Adjust padding if necessary */
+  }
+  
+  .nav-item {
+    margin: 0 5px !important; /* Space between menu items */
+  }
+  
+  .text-body-secondary {
+    color: #6c757d !important; /* Ensures the color is applied */
+  }
