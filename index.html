@@ -56,8 +56,17 @@
     </nav>
     <!-- Navbar end -->
 
-
-
+    <script>
+        document.querySelectorAll('.nav-link').forEach(item => {
+          item.addEventListener('click', function() {
+            const offcanvas = document.getElementById('offcanvasNavbar');
+            const offcanvasInstance = bootstrap.Offcanvas.getInstance(offcanvas);
+            if (offcanvasInstance) {
+              offcanvasInstance.hide();
+            }
+          });
+        });
+      </script>
 
     <!-- Home Section -->
     <section id="home">
