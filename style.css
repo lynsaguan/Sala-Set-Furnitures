@@ -103,7 +103,11 @@
     font-size: 12px; 
 }
 
-
+#modalSignin .btn-outline-secondary:hover,
+#modalSignin .btn-outline-primary:hover {
+    background-color: #E2F1E7;
+    color: #000;
+}
 /* modal for signup */
 #modalSignup .modal-header,
 #modalSignup .modal-body {
